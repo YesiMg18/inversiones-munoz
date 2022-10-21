@@ -34,7 +34,7 @@ if(registro()){
 			case '2':
 				let añosInversion = parseInt(prompt('Ingresa la cantidad de años que quieres calcular tu inversión '));
 				let agregarInversionCalcular = parseInt(prompt('Ingresa la cantida de quieres inventir cada mes'));
-				let resultadoCalcular = (agregarInversionCalcular * añosInversion * 12 * 1.20);
+				let resultadoCalcular = (agregarInversionCalcular * 12 * añosInversion  * 1.20);
 				alert('Tu saldo en' + añosInversion + 'sería de $' + resultadoCalcular);
 				break;
 			case '3':
