@@ -6,8 +6,8 @@ function registro(){
 	for (let i=1; i>=0; i++){
 		let userName = prompt('Ingresa tu nombre');
 		let userEmail = prompt('Ingresa tu email');
-		if ( userName != userEmail){
-			alert('Bienvenido/a' + userName + 'a tu simulador de inversiones.');
+		if ( userName.length >3 && userEmail.includes("@")){
+			alert('Bienvenido/a'+ userName + 'a tu simulador de inversiones.');
 			ingresar = true;
 			break;
 		}
@@ -24,7 +24,7 @@ if(registro()){
 	let opcionMenu =prompt ('Elige una opción: \n1 - Agregar invesión. \n2 -Calcula tu inversion. \n3 -Saldo Actual de mi Inversion. \n3 - Presiona X para Finalizar.');
 
 	while(opcionMenu!='X' && opcionMenu!='x'){
-		alert('Bienvenido/a')
+		alert('Bienvenido/a' + userName)
 		switch(opcionMenu){
 			case '1':
 				let agregarInversion = parseInt(prompt('Ingresa la cantidad que quieres agregar a tu invertir'));
@@ -35,7 +35,7 @@ if(registro()){
 				let añosInversion = parseInt(prompt('Ingresa la cantidad de años que quieres calcular tu inversión '));
 				let agregarInversionCalcular = parseInt(prompt('Ingresa la cantida de quieres inventir cada mes'));
 				let resultadoCalcular = (agregarInversionCalcular * 12 * añosInversion  * 1.20);
-				alert('Tu saldo en' + añosInversion + 'sería de $' + resultadoCalcular);
+				alert('Tu saldo en' + añosInversion + 'años , sería de $' + resultadoCalcular);
 				break;
 			case '3':
 				alert('El saldo de tu inversión es $' + saldoInversion);
@@ -49,3 +49,4 @@ if(registro()){
 	}
 }
 alert('Regresa Pronto');
+
