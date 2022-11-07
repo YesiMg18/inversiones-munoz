@@ -1,20 +1,63 @@
 
 let ingresar = false;
 
+const options =[
+	{
+		id: 0,
+		icon: '/img/icon-1.svg',
+		title: 'Sin comisiones',
+		description: 'No pagas ningún tipo de comisión, penalizaciones ni costos por transacciones'
+	  },
+	  {
+		id: 1,
+		icon: '/img/icon-2.svg',
+		title: 'Sin intermediarios',
+		description: 'No pagas ningún tipo de comisión, penalizaciones ni costos por transacciones'
+	  },
+	  {
+		id: 2,
+		icon: '/img/icon-2.svg',
+		title: 'Disposición',
+		description: 'Disponibilidad de tus recursos cuando lo decidas y sin penalizaciones'
+	  },
+	  {
+		id: 3,
+		icon: '/img/icon-2.svg',
+		title: 'Inversion segura',
+		description: 'Abres y operas tu cuenta en solo minutos, desde internet'
+	  }
+]
+
+function mostrarBeneficios () {
+	const elem = document.getElementById('benefitsOption');
+	let children ='';
+	for (let i = 0; i < options.length; i++) {
+		children += `<div>
+		<img src="${options[i].icon}" alt="">
+		<h4>${options[i].title}</h4>
+		<p>${options[i].description}</p>
+	</div>`
+	};
+	elem.innerHTML = children
+}
+
+mostrarBeneficios();
+
 function registro(){
 	
-	for (let i=1; i>=0; i++){
+	while (ingresar == false){
 		let userName = prompt('Ingresa tu nombre');
 		let userEmail = prompt('Ingresa tu email');
-		if ( userName.length >3 && userEmail.includes("@")){
+		if ( userName.length >=3 && userEmail.includes("@")){
 			alert('Bienvenido/a'+ userName + 'a tu simulador de inversiones.');
 			ingresar = true;
 			break;
+			
 		}
 		else {
 			alert('Acceso denegado, es necesario llenar la información.');
 		}
-
+	
 	}
 return ingresar;
 }
@@ -24,7 +67,6 @@ if(registro()){
 	let opcionMenu =prompt ('Elige una opción: \n1 - Agregar invesión. \n2 -Calcula tu inversion. \n3 -Saldo Actual de mi Inversion. \n3 - Presiona X para Finalizar.');
 
 	while(opcionMenu!='X' && opcionMenu!='x'){
-		alert('Bienvenido/a' + userName)
 		switch(opcionMenu){
 			case '1':
 				let agregarInversion = parseInt(prompt('Ingresa la cantidad que quieres agregar a tu invertir'));
@@ -49,4 +91,6 @@ if(registro()){
 	}
 }
 alert('Regresa Pronto');
+
+
 
