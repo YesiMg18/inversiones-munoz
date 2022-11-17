@@ -4,25 +4,25 @@ let ingresar = false;
 const options =[
 	{
 		id: 0,
-		icon: '/img/icon-1.svg',
+		icon: 'assets/img/icon-1.svg',
 		title: 'Sin comisiones',
 		description: 'No pagas ningún tipo de comisión, penalizaciones ni costos por transacciones'
 	  },
 	  {
 		id: 1,
-		icon: '/img/icon-2.svg',
+		icon: 'assets/img/icon-2.svg',
 		title: 'Sin intermediarios',
 		description: 'No pagas ningún tipo de comisión, penalizaciones ni costos por transacciones'
 	  },
 	  {
 		id: 2,
-		icon: '/img/icon-2.svg',
+		icon: 'assets/img/icon-3.svg',
 		title: 'Disposición',
 		description: 'Disponibilidad de tus recursos cuando lo decidas y sin penalizaciones'
 	  },
 	  {
 		id: 3,
-		icon: '/img/icon-2.svg',
+		icon: 'assets/img/icon-4.svg',
 		title: 'Inversion segura',
 		description: 'Abres y operas tu cuenta en solo minutos, desde internet'
 	  }

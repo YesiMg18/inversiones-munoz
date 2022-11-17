@@ -3,51 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript" defer src="script.js"></script>
+	<script type="text/javascript" defer src="js/script.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
 	<title>Inversiones</title>
 </head>
 <body>
 	<header>
 		<nav>
-			<a href="#"><img src="img/logo.png" alt="logo"></a>
+			<a href="#"><img src="assets/img/logo.png" alt="logo"></a>
 			<ul>
 				<li><a href="#">Quienes somos</a></li>
 				<li><a href="#">Nuestros Beneficios</a></li>
 				<li><a href="#">Simulador de Inversión</a></li>
-				<li><a href="#">Iniciar sesión</a></li>
+				<li><a class="iniciarSesion" href="#" id="btn_iniciarSesion" >Iniciar sesión</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
 		<section class="heroSection">
-			<div>
+			<div class="heroText">
 				<h1>Tu dinero podría estar trabajando por ti</h1>
 				<p>Cumple tus metas, desde ahorrar hasta aumentar tu patrimonio</p>
 				<a href="#">Quiero probar simulador</a>
 			</div>
-			<img src="img/img-hero.jpg" alt="">
+			<img src="assets/img/img-hero.jpg" alt="">
 		</section>
 		<section class="nosotrosSection">
-			<img src="img/img-compu.png" alt="">
-			<div>
-				<h<2>Quienes somos</h2>
-				<p>Es un producto y marca registrada propiedad de Nacional Financiera S.N.C., que cuenta con una plataforma gratuita en internet para que cualquier persona pueda invertir en Valores Gubernamentales sin la intermediación de la banca, casas de bolsa u otras instituciones.
+			<img src="assets/img/img-compu.png" alt="">
+			<div class="nosotrosText">
+				<h2>Quienes somos</h2>
+				<br>Es un producto y marca registrada propiedad de Nacional Financiera S.N.C., que cuenta con una plataforma gratuita en internet para que cualquier persona pueda invertir en Valores Gubernamentales sin la intermediación de la banca, casas de bolsa u otras instituciones.</br></br>
 				Tienes acceso a los títulos y las tasas emitidas por el Banco de México, no cobra comisiones. ¡Invierte de manera directa en Valores Gubernamentales seguros con montos accesibles y obtén los rendimientos de los grandes inversionistas!</p>
 			</div>
 		</section>
 		<section class="beneficiosSection">
 			<h2>Beneficios</h2>
-			<div id="benefitsOption">
+			<div class="cardsBeneficios" id="benefitsOption">
 				
 			</div>
 		</section>
 		<section class="simuladorSection">
-			<div>
+			<div class="simuladorTitle">
 				<h2>Simulador de inversiones </h2>
 				<p>Calcula y conoce tus ganacias en la cantidad de años de tu preferencia , conoce el rendimiento de tu dinero atraves de los años , con nuestro servicio</p>
 			</div>
-			<div>
-				<div>
+			<div class="simuladorCalculadora">
+				<div class="simuladorInputs">
 					<div>
 						<label for="ingreso">Ingreso mensual a tu cuenta de inversiones:</label>
 						<input type="number" name="ingreso" id="ingreso "placeholder="$">
@@ -58,7 +59,7 @@
 					</div>
 					<a href="#">Calcular</a>		
 				</div>
-				<div>
+				<div class="simuladorResultado">
 					<p>Tu inversión en  <spam> 4años</spam></p>
 					<p>Resultado de calculo</p>
 				</div>			
@@ -72,12 +73,12 @@
 	</main>
 	<footer>
 		<div>
-			<img src="img/logo.png" alt="logo">
+			<img src="assets/img/logo.png" alt="logo">
 		</div>
 		<div class="footerIcons">
-			<a href="#"><img src="img/fb-icon.svg"></a>
-			<a href="#"><img src="img/ins-icon.svg"></a>
-			<a href="#"><img src="img/tw-icon.svg"></a>
+			<a href="#"><img src="assets/img/fb-icon.svg"></a>
+			<a href="#"><img src="assets/img/ins-icon.svg"></a>
+			<a href="#"><img src="assets/img/tw-icon.svg"></a>
 		</div>
 		<div>
 			<p>Copyright 2022 InverFinance</p>
