@@ -43,7 +43,7 @@ function mostrarBeneficios () {
 
 mostrarBeneficios();
 
-function registro(){
+/*function registro(){
 	
 	while (ingresar == false){
 		let userName = prompt('Ingresa tu nombre');
@@ -91,6 +91,16 @@ if(registro()){
 	}
 }
 alert('Regresa Pronto');
+*/
 
+const agregarIngreso = document.getElementById('ingreso');
+const aniosInversion = document.getElementById('anios');
+const btnCalcular = document.getElementById('calcular');
 
-
+btnCalcular.onclick = () => {
+		//e.preventDefault();
+		let ingreso = agregarIngreso.value;
+		let anios = aniosInversion.value;
+		let resultadoCalcular =(ingreso * 12 * anios * 1.20);
+		simulador.innerHTML = `<p>Tu saldo en</p>` + anios + `<p>será de: $ </p>` + resultadoCalcular 
+}

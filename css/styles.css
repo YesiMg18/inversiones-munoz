@@ -192,6 +192,7 @@ footer img{
     border-radius: 15px;
     padding: 8px;
     background-color: transparent;
+    color: white;
 }
 .simuladorInputs input::placeholder{
     color: #E0E0E0;

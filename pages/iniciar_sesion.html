@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" defer src="../js/script.js"></script>
+	<link rel="stylesheet" href="../css/styles.css">
     <title>Iniciar Sesión</title>
 </head>
 <body>
-    
-    
+    <header>
+        <nav>
+			<a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
+			<ul>
+				<li><a href="#">Quienes somos</a></li>
+				<li><a href="#">Nuestros Beneficios</a></li>
+				<li><a href="#">Simulador de Inversión</a></li>
+				<li><a class="iniciarSesion" href="#" id="btn_iniciarSesion" >Iniciar sesión</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1 class="title">Hola de nuevo<img src="../assets/img/saludo.png" alt="saludo"></h1>
+                <div class="iniciarSesion">
+					<div>
+						<label for="name">Nombre:</label>
+						<input type="text" name="name" id="name" placeholder="Tu nombre">
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" placeholder="ejemplo@email.com">
+					</div>
+                    <div>
+						<label for="email">Contraseña:</label>
+						<input type="password" name="password" id="password">
+					</div>
+					<a href="#" id="acesso">Iniciar Sesión</a>		
+				</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+		<div>
+			<img src="../assets/img/logo.png" alt="logo">
+		</div>
+		<div class="footerIcons">
+			<a href="#"><img src="../assets/img/fb-icon.svg"></a>
+			<a href="#"><img src="../assets/img/ins-icon.svg"></a>
+			<a href="#"><img src="../assets/img/tw-icon.svg"></a>
+		</div>
+		<div>
+			<p>Copyright 2022 InverFinance</p>
+		</div>
+	</footer>
 </body>
 </html>

@@ -15,7 +15,7 @@
 				<li><a href="#">Quienes somos</a></li>
 				<li><a href="#">Nuestros Beneficios</a></li>
 				<li><a href="#">Simulador de Inversión</a></li>
-				<li><a class="iniciarSesion" href="#" id="btn_iniciarSesion" >Iniciar sesión</a></li>
+				<li><a class="iniciarSesion" href="pages/iniciar_sesion.html" id="btn_iniciarSesion" >Iniciar sesión</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -51,17 +51,15 @@
 				<div class="simuladorInputs">
 					<div>
 						<label for="ingreso">Ingreso mensual a tu cuenta de inversiones:</label>
-						<input type="number" name="ingreso" id="ingreso "placeholder="$">
+						<input type="number" name="ingreso" id="ingreso" placeholder="$">
 					</div>
 					<div>
 						<label for="ingreso">Años de inversión:</label>
-						<input type="number" name="ingreso" id="ingreso "placeholder="años">
+						<input type="number" name="anios" id="anios" placeholder="años">
 					</div>
-					<a href="#">Calcular</a>		
+					<a href="#" id="calcular">Calcular</a>		
 				</div>
-				<div class="simuladorResultado">
-					<p>Tu inversión en  <spam> 4años</spam></p>
-					<p>Resultado de calculo</p>
+				<div class="simuladorResultado" id="simulador">
 				</div>			
 			</div>
 		</section>
