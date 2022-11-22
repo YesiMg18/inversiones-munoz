@@ -93,12 +93,14 @@ if(registro()){
 alert('Regresa Pronto');
 */
 
+/*Función - Simulador de Homepage*/
+
 const agregarIngreso = document.getElementById('ingreso');
 const aniosInversion = document.getElementById('anios');
 const btnCalcular = document.getElementById('calcular');
 
-btnCalcular.onclick = () => {
-		//e.preventDefault();
+btnCalcular.onclick = (e) => {
+		e.preventDefault();
 		let ingreso = agregarIngreso.value;
 		let anios = aniosInversion.value;
 		let resultadoCalcular =(ingreso * 12 * anios * 1.20);

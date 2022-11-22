@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" defer src="../js/script.js"></script>
+    <script type="text/javascript" defer src="../js/perfil.js"></script>
+    <script type="text/javascript" src="../js/tabs.js"></script>
 	<link rel="stylesheet" href="../css/styles.css">
     <title>Mi Perfil de Inversión</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+			<a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
+			<ul>
+				<li>Nombre de Usuario <img src="../assets/img/user-icon.png"></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+        <section class="sectionTabs">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'agregarInversion')">Agregar inversión</button>
+                <button class="tablinks" onclick="openTab(event, 'calculadora')">Calcula tu inversion</button>
+                <button class="tablinks" onclick="openTab(event, 'saldo')">Mi saldo actual</button>
+              </div>
+              
+
+              <div id="agregarInversion" class="tabcontent">
+                <label for="ingreso">Ingresa la cantidad que quieres invertir:</label>
+                <input type="number" name="ingreso" id="ingreso" placeholder="$">
+                <a href="#" id="depositar">Depositar</a>    
+                <div id="resultadoDeposito"></div>         
+              </div>
+              
+              <div id="calculadora" class="tabcontent">
+                <div>
+                    <label for="ingreso">Ingreso mensual a tu cuenta de inversiones:</label>
+                    <input type="number" name="ingreso" id="ingreso" placeholder="$">
+                </div>
+                <div>
+                    <label for="ingreso">Años de inversión:</label>
+                    <input type="number" name="anios" id="anios" placeholder="años">
+                </div>
+                <a href="#" id="calcular">Calcular Inversión</a>	
+                <div class="simuladorResultado" id="simulador">
+				</div>		
+                </div>
+              
+              <div id="saldoActual" class="tabcontent">
+                <div id="fecha"></div>
+                <div id="saldo"></div>
+              </div>
+        </section>
+    </main>
 </body>
 </html>
