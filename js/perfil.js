@@ -6,6 +6,7 @@ const mostrarSaldo = document.getElementById('saldo');
 const btnSaldoActual = document.getElementById('saldoActual');
 
 let saldoInversion = 1000;
+
 /* Función -  Agregar Ingreso*/
 
 btnDepositar.onclick = (e) =>{
@@ -31,6 +32,6 @@ btnCalcular.onclick = (e) => {
 
 
 btnSaldoActual.onclick = () => {
-    let mostrarSaldo = saldoInversion;
+    let mostrarSaldo = saldoInversion += agregarIngreso;
     mostrarSaldo.innerHTML = `<p>Tu sueldo actual es de: ${saldoInversion}</p>`
 }
