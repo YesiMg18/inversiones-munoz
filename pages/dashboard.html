@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" defer src="../js/perfil.js"></script>
     <script type="text/javascript" src="../js/tabs.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
 	<link rel="stylesheet" href="../css/styles.css">
     <title>Mi Perfil de Inversión</title>
 </head>
@@ -14,7 +15,7 @@
         <nav>
 			<a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
 			<ul>
-				<li>Nombre de Usuario <img src="../assets/img/user-icon.png"></li>
+				<li><span id="name"></span><img src="../assets/img/user-icon.png"></li>
 			</ul>
 		</nav>
     </header>
@@ -37,7 +38,7 @@
               <div id="calculadora" class="tabcontent">
                 <div>
                     <label for="ingreso">Ingreso mensual a tu cuenta de inversiones:</label>
-                    <input type="number" name="ingreso" id="ingreso" placeholder="$">
+                    <input type="number" name="ingreso" id="ingresoCalculadora" placeholder="$">
                 </div>
                 <div>
                     <label for="ingreso">Años de inversión:</label>
@@ -48,9 +49,11 @@
 				</div>		
                 </div>
               
-              <div id="saldoActual" class="tabcontent">
-                <div id="fecha"></div>
-                <div id="saldo"></div>
+              <div id="saldo" class="tabcontent">
+                <div>
+                    <p id="fecha">Fecha actual:</p>
+                </div>
+                <div id="saldoActual"></div>
               </div>
         </section>
     </main>

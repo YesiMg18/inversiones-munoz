@@ -1,5 +1,4 @@
 
-let ingresar = false;
 
 const options =[
 	{
@@ -52,10 +51,10 @@ const btnCalcular = document.getElementById('calcular');
 
 btnCalcular.onclick = (e) => {
 		e.preventDefault();
-		let ingreso = agregarIngreso.value;
-		let anios = aniosInversion.value;
-		let resultadoCalcular =(ingreso * 12 * anios * 1.20);
-		simulador.innerHTML = `<p>Tu saldo en</p>` + anios + `<p>será de: $ </p>` + resultadoCalcular 
+		let ingreso = parseInt(agregarIngreso.value);
+		let anios = parseInt(aniosInversion.value);
+		let resultadoCalcular =(ingreso * 12 * anios * 2.50);
+		simulador.innerHTML = `<p>Tu saldo en ${anios} años será de : $ ${resultadoCalcular} pesos.</p>`
 }
 
 

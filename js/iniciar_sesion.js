@@ -21,9 +21,13 @@ const inputPass = document.getElementById ('password');
 const btnLogin = document.getElementById ('login');
 
 
+
 function validarUsers(usersDB,mail,pass){
     let encontrado = usersDB.find ((usersDB)=> usersDB.mail == mail);
     console.log (encontrado);
+
+    localStorage.setItem("user" ,JSON.stringify(encontrado))
+    
     if(typeof encontrado ==='undefined'){
         return false;
     }else{
@@ -38,12 +42,23 @@ function validarUsers(usersDB,mail,pass){
 btnLogin.addEventListener('click' ,(e) =>{
     e.preventDefault();
     if(!inputMail.value || !inputPass.value){
-        alert('Todos los campos son requeridos');
+        Swal.fire({
+            title: 'Error!',
+            text: 'Do you want to continue',
+            icon: 'error',
+            confirmButtonText: 'Cool'
+          });
     }else{
         let data = validarUsers(users, inputMail.value,inputPass.value);
         if(!data){
-            alert(`Usuario y/o contraseña incorrectos`);
+            Swal.fire({
+                title: 'Error!',
+                text: 'Do you want to continue',
+                icon: 'error',
+                confirmButtonText: 'Cool'
+              });
         }else{
-            alert(`Acceso exitoso`);
+            window.location = "./dashboard.html"
+            
     }
 }});

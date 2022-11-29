@@ -34,6 +34,10 @@ font-size: 14px;
 text-decoration: none;
 }
 
+li a:hover{
+    border-bottom: #E0E0E0 1px solid;
+}
+
 footer{
     background-color: #151515;
     display: flex;
@@ -288,4 +292,42 @@ footer img{
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+.loginSection {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.loginTitle{
+    margin-bottom: 32px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.loginTitle img{
+    width: 40px;
+}
+
+.loginInputs div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+.loginInputs label{
+    margin-bottom: 12px;
+}
+.loginInputs input{
+    margin-bottom: 16px;
+    border: 1px solid #FCFCFC;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: transparent;
+    color: white;
+    width: 500px;
+}
+
+.loginInputs a{
+    
 }
