@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navPerfil" >
 			<a href="../index.html"><img src="../assets/img/logo.png" alt="logo"></a>
 			<ul>
 				<li><span id="name"></span><img src="../assets/img/user-icon.png"></li>
@@ -20,6 +20,9 @@
 		</nav>
     </header>
     <main>
+        <section class="titlePerfil">
+            <h1>Bienvenido/a tu portal de inversiones</h1>
+        </section>
         <section class="sectionTabs">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'agregarInversion')">Agregar inversión</button>
@@ -29,10 +32,12 @@
               
 
               <div id="agregarInversion" class="tabcontent">
-                <label for="ingreso">Ingresa la cantidad que quieres invertir:</label>
-                <input type="number" name="ingreso" id="ingreso" placeholder="$">
-                <a href="#" id="depositar">Depositar</a>    
-                <div id="resultadoDeposito"></div>         
+                <div>
+                    <label for="ingreso">Ingresa la cantidad que quieres invertir:</label>
+                    <input type="number" name="ingreso" id="ingreso" placeholder="$">
+                    <a href="#" id="depositar">Depositar</a>    
+                    <div class="resultadoPerfil"  id="resultadoDeposito"></div>
+                </div>     
               </div>
               
               <div id="calculadora" class="tabcontent">
@@ -45,15 +50,15 @@
                     <input type="number" name="anios" id="anios" placeholder="años">
                 </div>
                 <a href="#" id="calcular">Calcular Inversión</a>	
-                <div class="simuladorResultado" id="simulador">
+                <div class="resultadoPerfil" id="simulador">
 				</div>		
                 </div>
               
               <div id="saldo" class="tabcontent">
                 <div>
-                    <p id="fecha">Fecha actual:</p>
+                    <p class="fecha" id="fecha">Fecha actual:</p>
                 </div>
-                <div id="saldoActual"></div>
+                <div class="resultadoSaldo" id="saldoActual"></div>
               </div>
         </section>
     </main>

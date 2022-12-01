@@ -27,8 +27,8 @@ btnCalcular.onclick = (e) => {
 }
 
 calcularInversion = (anios, ingresoCalculadora) => {
-    let resultadoCalcular = (ingresoCalculadora * 12 * anios * 2.50);
-    simulador.innerHTML = `<p>Tu inversión en ${anios} años ,será de: $${resultadoCalcular} pesos. </p>`
+    let resultadoCalcular = (ingresoCalculadora * 12 * anios * 6.50);
+    simulador.innerHTML = `<p>Tu inversión en ${anios} años será de: $${resultadoCalcular} pesos. </p>`
 }
 
 /*Función - saldo*/

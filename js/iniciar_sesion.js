@@ -24,7 +24,6 @@ const btnLogin = document.getElementById ('login');
 
 function validarUsers(usersDB,mail,pass){
     let encontrado = usersDB.find ((usersDB)=> usersDB.mail == mail);
-    console.log (encontrado);
 
     localStorage.setItem("user" ,JSON.stringify(encontrado))
     
@@ -43,19 +42,19 @@ btnLogin.addEventListener('click' ,(e) =>{
     e.preventDefault();
     if(!inputMail.value || !inputPass.value){
         Swal.fire({
-            title: 'Error!',
-            text: 'Do you want to continue',
+            title: 'Error',
+            text: 'Completa todos los campos solicitados',
             icon: 'error',
-            confirmButtonText: 'Cool'
+            confirmButtonText: 'Aceptar'
           });
     }else{
         let data = validarUsers(users, inputMail.value,inputPass.value);
         if(!data){
             Swal.fire({
-                title: 'Error!',
-                text: 'Do you want to continue',
+                title: 'Acceso denegado',
+                text: 'Este usuario no existe, intenta con otra cuenta',
                 icon: 'error',
-                confirmButtonText: 'Cool'
+                confirmButtonText: 'Volver a intentar'
               });
         }else{
             window.location = "./dashboard.html"
